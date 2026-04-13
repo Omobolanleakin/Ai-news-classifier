@@ -1,0 +1,184 @@
+/* html { font-family: sans-serif; background: #eee; padding: 1rem; }
+body{ max-width: 960px; font:15px/1.5 Arial, Helvetica,sans-serif; 	padding: 0px; 	margin: 0 auto; background-color: #a079d4; }
+
+.container{ width:100%; margin: auto; overflow: hidden;}
+
+header{ background:#000000;	border-bottom:#448AFF 10px solid;height:120px; width:100%; 	padding-top:10px;}
+
+.main-header{ text-align:center;background-color: blue;	height:100px;width:100%;margin:0px;	}
+form { text-align:center;  }
+#brandname{ font-size:30px;	text-align:center; 	color: #fff;}
+p{font-size:33px;	text-align:center; color: #white; font-weight:bolder}
+header h2{ 	text-align:center; 	font-size:30px;	color:#fff;}
+.btn-info {padding: 15px 25px; font-size: 24px; cursor: pointer; text-align: center; outline: none; color: #fff; background-color: #4055f5; border: none; border-radius: 40px;margin-bottom: 10px;}  
+.btn-info:hover {background: #3045e6; }
+p.copyright { position: absolute;font-weight: bold;  color: #fff; width: 100%;line-height: 40px; bottom:0;text-align: center;  font-size: 0.7em;}  
+footer.footer {position: relative; height:60px; width: 100%;background-color: #333333;}
+.resultss{ 	border-radius: 15px 50px;  background: #345fe4;  padding: 20px;  width: 200px; height: 150px; } */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Background */
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Center Layout */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+/* Card UI */
+.card {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(15px);
+  padding: 40px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* Title */
+.card h1 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+.subtitle {
+  font-size: 15px;
+  margin-bottom: 20px;
+  opacity: 0.85;
+  line-height: 1.0;
+}
+/* Result Container */
+.result-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px; /* clean spacing */
+  margin-top: 20px;
+}
+
+/* Badge */
+.badge {
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  display: inline-block;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Category Colors */
+.sport {
+  background: #1e90ff;
+}
+.business {
+  background: #28a745;
+}
+.politics {
+  background: #dc3545;
+}
+.entertainment {
+  background: #ff9800;
+}
+.tech {
+  background: #6f42c1;
+}
+.unknown {
+  background: #6c757d;
+}
+
+/* Confidence Box (NEW CLEAN STYLE) */
+.confidence-container {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 10px 20px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+
+/* Confidence Text */
+.confidence-text {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  color: white;
+  opacity: 0.9;
+}
+
+/* Button */
+.back-btn {
+  display: inline-block;
+  margin-top: 30px;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 12px 25px;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.back-btn:hover {
+  background: white;
+  color: #333;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  color: white;
+  font-size: 14px;
+  opacity: 0.8;
+}
+/* FORM FIX */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+/* TEXTAREA FIX */
+textarea {
+  width: 100%;
+  max-width: 450px;
+  height: 120px;
+  padding: 15px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  resize: none;
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+}
+
+/* BUTTON FIX */
+button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  background: #ff7a18;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ff5200;
+}

@@ -1,0 +1,151 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <link rel="stylesheet" type="text/css"  href="static/styles.css">
+</head>
+<body>
+
+	<header>
+		<div class="container">
+		<div id="brandname">
+An Intelligent Document Classification System In The News Media Using Machine Learning Model	
+		</div>
+		<h2>
+		</h2>
+		
+	</div>
+	</header>
+	
+	<p style="color:white;font-size:20;text-align: center;"><b>Results for Message</b></p>
+	<div class="results"> -->
+<!-- 		
+	{% if prediction == 1%}
+	<h1 style="color:red ;text-align: center;">Spam &#128721; </h1>
+	{% elif prediction == 0%}
+	<h1 style="color:green;text-align: center;" >Not a Spam  &#128140; </h1>
+	{% endif %} -->
+<!-- 
+	{% if prediction == 1 %}
+	<h1 style="color: blue; text-align: center;">Sport News</h1>
+      {% elif prediction == 2 %}
+	<h1 style="color: green; text-align: center;">Business News</h1>
+      {% elif prediction == 3 %}
+	<h1 style="color: red; text-align: center;">Politics News</h1>
+      {% elif prediction == 4 %}
+	<h1 style="color: orange; text-align: center;">Entertainment News</h1>
+      {% elif prediction == 5 %}
+	<h1 style="color: purple; text-align: center;">Tech News</h1>
+      {% else %}
+	<h1 style="color: black; text-align: center;">Unknown Category</h1>
+      {% endif %}
+      
+
+
+
+
+	</div>
+
+
+</body>
+
+   <footer class="footer">
+    <div class="footerContainer">
+        <p class="copyright"> Made by Omobolanle &#x1F497 </p>
+    </div>
+
+</html> -->
+<!-- <!doctype html>
+<html>
+  <head>
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="static/styles.css" />
+  </head>
+  <body>
+    <div class="hero">
+      <div class="card result-card">
+        <h1>📊 Prediction Result</h1>
+
+        <div class="result-box">
+          {% if prediction == 1 %}
+          <span class="badge sport">⚽ Sport News</span>
+
+          {% elif prediction == 2 %}
+          <span class="badge business">💼 Business News</span>
+
+          {% elif prediction == 3 %}
+          <span class="badge politics">🏛 Politics News</span>
+
+          {% elif prediction == 4 %}
+          <span class="badge entertainment">🎬 Entertainment News</span>
+
+          {% elif prediction == 5 %}
+          <span class="badge tech">💻 Tech News</span>
+
+          {% else %}
+          <span class="badge unknown">❓ Unknown Category</span>
+          {% endif %}
+        </div>
+
+        <a href="/" class="back-btn">⬅ Try Another</a>
+      </div>
+    </div>
+
+    <footer>
+      <p>Made by Omobolanle 💜</p>
+    </footer>
+  </body>
+</html> -->
+<!doctype html>
+<html>
+  <head>
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="static/styles.css" />
+  </head>
+  <body>
+    <div class="hero">
+      <div class="card result-card">
+        <h1>📊 Prediction Result</h1>
+
+        <div class="result-box">
+          {% if unknown %}
+
+          <span class="badge unknown"> ⚠ Unable to classify this input </span>
+
+          <div class="confidence-container">
+            <p class="confidence-text">Model confidence too low</p>
+          </div>
+
+          {% else %} {% if prediction == 1 %}
+          <span class="badge sport">⚽ Sport News</span>
+
+          {% elif prediction == 2 %}
+          <span class="badge business">💼 Business News</span>
+
+          {% elif prediction == 3 %}
+          <span class="badge politics">🏛 Politics News</span>
+
+          {% elif prediction == 4 %}
+          <span class="badge entertainment">🎬 Entertainment News</span>
+
+          {% elif prediction == 5 %}
+          <span class="badge tech">💻 Tech News</span>
+
+          {% else %}
+          <span class="badge unknown">❓ Unknown Category</span>
+          {% endif %} {% if confidence %}
+          <div class="confidence-container">
+            <p class="confidence-text">Confidence: {{ confidence }}%</p>
+          </div>
+          {% endif %} {% endif %}
+        </div>
+
+        <a href="/" class="back-btn">⬅ Try Another</a>
+      </div>
+    </div>
+
+    <footer>
+      <p>Made by Omobolanle 💜</p>
+    </footer>
+  </body>
+</html>
